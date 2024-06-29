@@ -18,15 +18,6 @@ export const CardPreGen = () => {
         }[meal] || 0;
         setGeneratedMealCount(mealCount);
     };
-    const handleButtonClick = () => {
-        setShowCard(true);
-        const mealCount = {
-            thrice: 3,
-            quad: 4,
-            quint: 5,
-        }[meal] || 0;
-        setGeneratedMealCount(mealCount);
-    };
     
     const handleMealChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setMeal(event.target.value);
