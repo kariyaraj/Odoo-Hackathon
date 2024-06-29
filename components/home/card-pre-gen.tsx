@@ -27,10 +27,7 @@ export const CardPreGen = () => {
         }[meal] || 0;
         setGeneratedMealCount(mealCount);
     };
-
-    const handleMealChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setMeal(event.target.value);
-    };
+    
     const handleMealChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setMeal(event.target.value);
     };
