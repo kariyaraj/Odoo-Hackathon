@@ -50,11 +50,6 @@ export const SidebarWrapper = () => {
                 href="aboutus"
               />
 
-              <SidebarItem
-                isActive={pathname === "/settings"}
-                title="Settings"
-                icon={<SettingsIcon />}
-              />
 
 
 
