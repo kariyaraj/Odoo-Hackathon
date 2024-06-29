@@ -7,6 +7,7 @@ import { SearchIcon } from "../icons/searchicon";
 import { BurguerButton } from "./burguer-button";
 import { NotificationsDropdown } from "./notifications-dropdown";
 import { UserDropdown } from "./user-dropdown";
+import { DarkModeSwitch } from "./darkmodeswitch";
 
 interface Props {
   children: React.ReactNode;
@@ -23,7 +24,7 @@ export const NavbarWrapper = ({ children }: Props) => {
         }}
       >
         <NavbarContent className="md:hidden">
-          <BurguerButton />
+          <BurguerButton /> 
         </NavbarContent>
         <NavbarContent className="w-full max-md:hidden">
           <Input
@@ -41,6 +42,8 @@ export const NavbarWrapper = ({ children }: Props) => {
           justify="end"
           className="w-fit data-[justify=end]:flex-grow-0"
         >
+          <DarkModeSwitch />
+
           <div className="flex items-center gap-2 max-md:hidden">
             <FeedbackIcon />
             <span>Feedback?</span>
@@ -48,12 +51,8 @@ export const NavbarWrapper = ({ children }: Props) => {
 
           <NotificationsDropdown />
 
-          <div className="max-md:hidden">
-            <SupportIcon />
-          </div>
-
           <Link
-            href="https://github.com/Siumauricio/nextui-dashboard-template"
+            href="https://github.com/kariyaraj/Odoo-Hackathon/"
             target={"_blank"}
           >
             <GithubIcon />

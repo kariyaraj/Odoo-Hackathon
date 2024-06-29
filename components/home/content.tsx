@@ -34,7 +34,7 @@ export const Content = () => (
 
         {/* Card Pre Gen */}
         <div className="h-full flex flex-col gap-2">
-          <h3 className="text-xl font-semibold">Pre-Generated Cards</h3>
+          {/* <h3 className="text-xl font-semibold">Pre-Generated Cards</h3> */}
           <div className="w-full bg-default-50 shadow-lg rounded-2xl p-6 ">
             <CardPreGen />
           </div>
